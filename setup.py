@@ -1,17 +1,14 @@
-from __future__ import print_function
-from setuptools import setup, find_packages
-import sys
 
-import ossproject
+import setuptools 
+import adossproject
 
-long_description = """
-This package is a practical exercice of packaging
-"""
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
-setup(
-    name='ossproject',
-    version=ossproject.__version__,
-    url='',
+setuptools.setup(
+    name='adossproject',
+    version=adossproject.__version__,
+    # url='',
     license='MIT',
     author='Anton Dorozhko',
     tests_require=['pytest'],
@@ -19,7 +16,8 @@ setup(
     author_email='dorozhko.a@gmail.com',
     description='packaging package',
     long_description=long_description,
-    packages=['project'],
+    long_description_content_type="text/markdown",
+    packages=setuptools.find_packages(),
     include_package_data=True,
     platforms='any',
     classifiers = [
@@ -28,6 +26,6 @@ setup(
     extras_require={
         'testing': ['pytest'],
     },
-    scripts = [''],
-
+    # scripts = [''],
+    python_requires='>=3.5'
 )
