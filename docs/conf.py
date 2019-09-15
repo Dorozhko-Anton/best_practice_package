@@ -12,12 +12,12 @@
 #
 # import os
 # import sys
-# sys.path.insert(0, '/home/anton/Documents/aws/best_practice_package/ossproject')
+# sys.path.insert(0, '/home/anton/Documents/aws/best_practice_package/adossproject')
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'ossproject'
+project = 'adossproject'
 copyright = '2019, Author'
 author = 'Author'
 
